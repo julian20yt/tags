@@ -45,7 +45,29 @@ speed a 0.05
 audiopitch a {abs:-1.{range:32|1280720}}
 explode a 3
 swaprgba a grba
-render a
+copy a m
+reverse m
+audiovibrato m 20000 1
+audiovibrato m 20000 1
+reverse m 
+audiovibrato m 20000 1
+audiovibrato m 20000 1
+copy m m2
+audiopitch m2 1.005
+audioputmix m m2
+audiovibrato m 20000 1
+copy m m3
+reverse m3
+audiovibrato m3 20000 1
+reverse m3
+speed m3 1
+audiopitch m3 1.005
+audioputmix m m3
+volume m 2
+volume m3 2
+volume m 2
+volume m3 2
+render m
 }
 {if:{arg:0}|=|ffmpeg effect|then:{set:code|-vf negate,hue=h=-45}}
 {if:{arg:0}|=|g major 91|then:{set:code|swaprgba # bgr

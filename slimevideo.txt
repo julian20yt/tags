@@ -33,7 +33,6 @@ if check_item_in_json(json_data=json_string, item=item_to_find):
   print(True)
 else:
   print(False)}}
-{if:{get:banned}|=|True|then:{mention:{id}} you are banned from slimevideo and all of its tag aliases.|else:
 {if:{argslen}|<|1|then:.t {tagname} <effect> <args...> <subcommand> <subcommand args>|else:-# Note: slimevideo is in BETA!
 {if:{arg:1}|!=|list|then:{choose:hey i feel so sprunki|《SPRUNKI》|☆TAT☆ FOUND AFTER 10 YEARS NO WAY|{repeat:30|OPEN THE FUCKING DOOR! }|have a bowl mr squidward|ALBUQUERQUE!!!!!!!!!!!!!!!!!!!!!!!!!!|Meet Xbox One|Meet Xbox 360|{get:banlist} is stupid| in order to use this video you need to install Microsoft Silverlight.|hey i feel so skibidi|https://web.archive.org/web/20130530063813cs_/http://www.xbox.com/shell/css/xboxv4.css?v=134304|NEXUS S 4G|{randuser}, {randuser}, {randuser}, and {randuser} hates google nexus|DR. JR.|tab|ctrl|alt|backspace|shift|del|esc|F1|F2|F3|F4|F5|F6|F7|F8|F9|F10|F11|F12|im gonna press the F25 Key, Get raddy.|oh hell naw that did they do to "{args}" and {user}|skibidi toilet among us|red|⌫⌫⌫⌫⌫|# 卐卐卐卐卐卐卐卐卐卐卐卐卐 {newline} -# 卐 goose 卐|WHY IS THE GOOGOOSY AT MY DOOR|alone in a world is a little catdog!|# ⌨ {newline} -# keyboard|(o⌣o)|㍲㍴|unicode|google|𜱍|(o◡o)|(owo)|🛜wireless🛜|xbox select button is "🅐"|"ps2" - sadie|who the fuck asked|# ⌘|‼️ :a: 🧯 ***__AMONG US REFERENCE DETECTED__*** 📮 :b: ‼️|😳🤪🥺😏🥵 You are such a sussy baka 😂😎😛😱🤤|My prefix is M-O-T-E-N-L-F-O-M-O-T-E-M-E-N|# ☻}
 {if:{argslen}|=|obamamode|then: OBAMA MODE ACTIVATED {iscript:
@@ -88,5 +87,4 @@ ffmpeg -i $FILE_1 {get:code} ./output/slimevideo.mp4}}|else:{if:{indexof:veb|{ar
 ffmpeg -i $FILE_1 {get:code} ./output/slimevideo.mp4}|else:{if:{arg:{math:{get:offset}+1}}|=|raw|then:```{replace:#|{or:{arg:{math:{get:offset}+2}}|#}|{get:code}}```{attachtext:{replace:#|{or:{arg:{math:{get:offset}+2}}|#}|{get:code}}}|else:{iscript:load {iv} 0
 {replace:#|0|{get:code}}
 render 0}}}}
-}
 }

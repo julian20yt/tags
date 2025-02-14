@@ -1,0 +1,4 @@
+# Linux Shell On Discord
+Command: ```{or:{args}}|none, a placeholder will be used.}```
+{or:{sh:{args}}|{sh:{choose:help|ffmpeg -version|ffmpeg -h|echo nexus sprint logo|ls}
+AI Prompt: {imagine:{replace|ffmpeg|sprint|{replace:Linux|Sprint logo|{replace:GNU Bash|Sprint logo|{sh:{args}}}}}}
